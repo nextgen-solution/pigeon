@@ -1,4 +1,4 @@
-# Pigeon SDK
+# Pigeon
 
 [Pigeon document is here!](https://documenter.getpostman.com/view/6412926/SVYkyMqq)
 
@@ -6,7 +6,12 @@
 
 1. Install via composer `composer require nextgen-solution/pigeon-sdk`
 2. Publish configuration `php artisan vendor:publish`
-3. Enjoy!
+3. Update your env
+    ```
+    PIGEON_HOST=
+    PIGEON_KEY=
+    ```
+4. Enjoy!
 
 ## Interface
 
