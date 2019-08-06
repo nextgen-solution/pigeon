@@ -4,7 +4,7 @@
 
 ## Installation
 
-1. Install via composer `composer require nextgen-solution/pigeon-sdk`
+1. Install via composer `composer require nextgen-solution/pigeon`
 2. Publish configuration `php artisan vendor:publish`
 3. Update your env
     ```
