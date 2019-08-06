@@ -3,11 +3,10 @@
 namespace NextGenSolution\Pigeon;
 
 use GuzzleHttp\Client;
-use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use NextGenSolution\Pigeon\Pigeon;
 
-class ServiceProvider extends BaseServiceProvider implements DeferrableProvider
+class ServiceProvider extends BaseServiceProvider
 {
     /**
      * Register any application services.
@@ -35,15 +34,5 @@ class ServiceProvider extends BaseServiceProvider implements DeferrableProvider
         $this->mergeConfigFrom(
             __DIR__ . '/../config/pigeon.php', 'pigeon'
         );
-    }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return [Pigeon::class];
     }
 }
